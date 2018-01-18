@@ -21,7 +21,7 @@ public class Candy extends DessertItem {
     
     @Override
     public String toString() {
-        String fromCandy = "\n" + weight + " Lbs. @ $" + DessertShoppe.cents2dollarsAndCents(pricePerLbs) + " /Lb.";
+        String fromCandy = "" + weight + " lbs. @ $" + DessertShoppe.cents2dollarsAndCents(pricePerLbs) + " /lb.";
         fromCandy += "\n" + super.getName();
         String l = DessertShoppe.cents2dollarsAndCents(getCost()) + "";
         for (int i = 0; i < DessertShoppe.RECEIPT_WIDTH - super.getName().length() - l.length(); i++) {

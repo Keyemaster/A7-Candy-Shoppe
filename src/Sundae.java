@@ -21,7 +21,7 @@ public class Sundae extends IceCream {
 
     @Override
     public String toString() {
-        String fromSundae = "\n" + toppingName + " with " + "\n";
+        String fromSundae = "" + toppingName + " with " + "\n";
         fromSundae += super.getName();
         String s = DessertShoppe.cents2dollarsAndCents(getCost()) + "";
         for (int i = 0; i < DessertShoppe.RECEIPT_WIDTH - super.getName().length() - s.length(); i++) {

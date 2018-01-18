@@ -21,7 +21,6 @@ public class TestShoppe {
 
         checkout.clear();
 
-        System.out.println("\n");
 
 
         checkout.enterItem(new IceCream("Strawberry Ice Cream", 145));

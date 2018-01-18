@@ -63,7 +63,7 @@ public class Checkout {
         for (int i = 0; i < DessertShoppe.RECEIPT_WIDTH - 5 - totalS.length(); i++) {
             output += " ";
         }
-        output += totalS + "\n";
+        output += totalS + "\n\n";
         return output;
     }
 }

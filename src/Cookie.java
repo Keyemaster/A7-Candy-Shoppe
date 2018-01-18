@@ -21,7 +21,7 @@ public class Cookie extends DessertItem {
 
     @Override
     public String toString() {
-        String fromCookie = "\n" + number + " @ $" + DessertShoppe.cents2dollarsAndCents(pricePer12) + " /dz";
+        String fromCookie = "" + number + " @ $" + DessertShoppe.cents2dollarsAndCents(pricePer12) + " /dz";
         fromCookie += "\n" + super.getName();
         String c = DessertShoppe.cents2dollarsAndCents(getCost()) + "";
         for (int i = 0; i < DessertShoppe.RECEIPT_WIDTH - super.getName().length() - c.length(); i++) {
